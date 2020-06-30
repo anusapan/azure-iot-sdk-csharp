@@ -10,10 +10,10 @@ jobs:
       # Change maxParallel to 1 make builds run in serial rather than in parallel
       maxParallel: 100
       matrix:
-        .Net Core 3.1:
-          FRAMEWORK: netcoreapp3.1
-        .Net Core 2.1.18:
-          FRAMEWORK: netcoreapp2.1.18
+        #.Net Core 3.1:
+        #  FRAMEWORK: netcoreapp3.1
+        #.Net Core 2.1.18:
+        #  FRAMEWORK: netcoreapp2.1.18
 
     condition: succeeded()
     pool:
@@ -120,14 +120,14 @@ jobs:
       # Change maxParallel to 1 make builds run in serial rather than in parallel
       maxParallel: 100
       matrix:
-        .Net Core 3.1:
-          FRAMEWORK: netcoreapp3.1
-        .Net Core 2.1.18:
-          FRAMEWORK: netcoreapp2.1.18
+        #.Net Core 3.1:
+        #  FRAMEWORK: netcoreapp3.1
+        #.Net Core 2.1.18:
+        #  FRAMEWORK: netcoreapp2.1.18
         .Net Framework 4.7.2:
           FRAMEWORK: net472
-        .Net Framework 4.5.1:
-          FRAMEWORK: net451
+        #.Net Framework 4.5.1:
+        #  FRAMEWORK: net451
 
     condition: succeeded()
     pool:
